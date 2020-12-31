@@ -1,2 +1,2 @@
-# healoMedical
-HealO Medical Website
+# README
+NextJS website

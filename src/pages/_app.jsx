@@ -9,11 +9,13 @@ import Header from "../components/Header";
 import "focus-visible/dist/focus-visible.min.js";
 import "normalize.css";
 import "../../public/static/styles/App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const MyApp = ({ Component, pageProps, router, currentUser }) => (
   <>
     <Head>
-      <title>HealO Medical</title>
+      <title>Huggy Mobile</title>
     </Head>
     <div className="App">
       <Header loggedIn={currentUser != null} currentRoute={router.asPath} />

@@ -1,3 +1,120 @@
 .centerText {
     text-align: center;
 }
+.indexContainer {
+    margin-top: 50px;
+}
+
+.carouselContainer {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carouselImage {
+    height: 600px;
+    margin-right: 30px;
+}
+.carouselText {
+    width: 400px;
+}
+.carouselText h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.carouselText p {
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.carouselItem {
+    display: flex;
+    align-items: center;
+}
+button.buyButton {
+    background-color: white;
+    color: black;
+    width: 200px;
+    border-color: black;
+    height: 50px;
+    font-size: 22px;
+}
+button.buyButton:hover {
+    color:white;
+    background-color:black;
+    border-color: white;
+}
+.chevron {
+    color: black;
+}
+.chevron:hover {
+    background-color: darkgrey;
+}
+
+div.learnMore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+h1.productTitle {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 200px;
+    z-index: 10;
+}
+div.productsContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+img.runnerImage {
+    width: 500px;
+    margin-right: 30px;
+}
+div.productText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.productText h1 {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+div.productText p {
+    width: 500px;
+}
+div.deviceSelection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+span.features {
+    font-size: 25px;
+    font-weight: bold;
+}
+div.viewAll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 100px;
+}
+div.viewAll h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-right: 10px;
+}
+div.customerReviewContainer {
+    width: 100%;
+    background-color: gray;
+    height: 300px;
+}

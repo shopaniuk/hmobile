@@ -2,38 +2,26 @@ import urls from "../../../utils/urls";
 
 const routes = [
   {
-    name: "Home",
+    name: "HuggyMobile",
     link: urls.pages.index,
     auth: false,
     atEnd: false,
   },
   {
-    name: "O-ACE-Sys®",
+    name: "SHOP",
     link: urls.pages.oacesys,
     auth: false,
-    atEnd: false,
+    atEnd: true,
   },
   {
-    name: "Clinicians",
+    name: "ABOUT",
     link: urls.pages.clinicians,
     auth: false,
     atEnd: false,
   },
   {
-    name: "Investors",
-    link: urls.pages.investors,
-    auth: false,
-    atEnd: false,
-  },
-  {
-    name: "About",
-    link: urls.pages.about,
-    auth: false,
-    atEnd: false,
-  },
-  {
-    name: "中文版",
-    link: urls.pages.中文版,
+    name: "CART",
+    link: urls.pages.clinicians,
     auth: false,
     atEnd: false,
   },
