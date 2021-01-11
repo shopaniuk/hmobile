@@ -1,0 +1,79 @@
+.centerText {
+    text-align: center;
+}
+
+div.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+h1.title {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.ourMissionContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+h2.ourMissionTitle {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+div.ourMissionLeft {
+    width: 20vw;
+    margin-right: 100px;
+}
+img.ourMissionImage {
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+div.ourMissionRight{
+    width: 40vw;
+}
+div.ourMissionRight p{
+    font-size: 20px;
+}
+
+a.learnMore {
+    font-family: sans-serif;
+    font-weight: 550;
+    font-size: 42px;
+    color: black;
+    margin-left: 40%;
+}
+
+div.productContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    align-items: center;
+}
+div.productContainer h2 {
+    font-family: sans-serif;
+    font-weight: 550;
+    font-size: 36px;
+    color: black; 
+}
+
+img.theProductImage {
+    max-width: 600px;
+    margin-right: 100px;
+}
+div.productRight {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+div.productRight p {
+    font-size: 20px;
+}

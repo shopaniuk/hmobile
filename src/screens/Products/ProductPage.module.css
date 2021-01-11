@@ -1,0 +1,92 @@
+.centerText {
+    text-align: center;
+}
+
+div.productContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+h1.title {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.phoneContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+h2.phoneTitle {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+div.phoneLeft {
+    width: 20vw;
+    margin-right: 100px;
+}
+img.phoneImage {
+    max-width: 400px;
+}
+
+div.phoneRight{
+    width: 40vw;
+}
+div.phoneRight p{
+    font-size: 20px;
+}
+div.phoneRight h1{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+div.phoneRight h4 {
+    font-weight: 400;
+}
+
+button.learnMore {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    border-color: black;
+    border-width: 3px;
+}
+button.learnMore:hover {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-width: 3px;
+}
+div.tabletContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+div.tabletLeft {
+    width: 40vw;
+    align-items: right;
+    margin-right: 100px;
+    justify-content: right;
+    text-align: right;
+}
+div.tabletLeft p{
+    font-size: 20px;
+}
+div.tabletLeft h1{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}

@@ -2,10 +2,9 @@ export default {
   baseUrl: process.env.BASE_URL ?? "http://localhost:3000",
   dbUrl: process.env.MONGO_DB ?? "mongodb://localhost:27017",
   pages: {
+    about: "/about",
     index: "/",
-    oacesys: "/oacesys",
-    clinicians: "/clinicians",
-    investors: "/investors",
+    shop: "/ourproducts",
     about: "/about",
     中文版: "/中文版",
   },

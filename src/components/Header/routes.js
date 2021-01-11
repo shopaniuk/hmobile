@@ -9,19 +9,19 @@ const routes = [
   },
   {
     name: "SHOP",
-    link: urls.pages.oacesys,
+    link: urls.pages.shop,
     auth: false,
     atEnd: true,
   },
   {
     name: "ABOUT",
-    link: urls.pages.clinicians,
+    link: urls.pages.about,
     auth: false,
     atEnd: false,
   },
   {
     name: "CART",
-    link: urls.pages.clinicians,
+    link: urls.pages.about,
     auth: false,
     atEnd: false,
   },
