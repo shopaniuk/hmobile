@@ -1,13 +1,10 @@
 import React from "react";
 import classes from "./AboutPage.module.css";
-import HomeCarousel from "../../components/HomeCarousel";
 import { ChevronLeft, ChevronRight, KeyboardArrowDown, Star, StarOutline, ShoppingCartOutlined } from "@material-ui/icons";
 import { Button, Image } from "react-bootstrap";
-import AirPods from "../../../public/static/airPods.png";
-import Runner from "../../../public/static/runner.png";
 import Link from "next/link";
-// import ourMission1 from "../../../public/static/OurMission1.png";
-import ourMission2 from "../../../public/static/OurMission2.png";
+import OurMission1 from "../../../public/static/OurMission1.png";
+import OurMission2 from "../../../public/static/OurMission2.png";
 import theProduct from "../../../public/static/theProduct.png";
 
 const AboutPage = () => {
@@ -19,8 +16,8 @@ const AboutPage = () => {
       <h1 className={title}>ABOUT</h1>
       <div className={ourMissionContainer}>
         <div className={ourMissionLeft}>
-          <Image className={ourMissionImage} src={ourMission1}></Image>
-          <Image className={ourMissionImage} src={ourMission2}></Image>
+          <Image className={ourMissionImage} src={OurMission1}></Image>
+          <Image className={ourMissionImage} src={OurMission2}></Image>
         </div>
         <div className={ourMissionRight}>
           <h2 className={ourMissionTitle}>OUR MISSION</h2>
@@ -32,7 +29,6 @@ const AboutPage = () => {
           </p>
           <Link id="learnMore" href="/" ><a className={learnMore}>LEARN MORE<ChevronRight style={{ fontSize: 40 }} /></a></Link>
         </div>
-
       </div>
       <div className={productContainer}>
         <Image className={theProductImage} src={theProduct} ></Image>
