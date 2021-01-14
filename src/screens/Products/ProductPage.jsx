@@ -4,7 +4,6 @@ import { ChevronLeft, ChevronRight, KeyboardArrowDown, Star, StarOutline, Shoppi
 import { Button, Image } from "react-bootstrap";
 import Link from "next/link";
 import product from "../../../public/static/product.png";
-import phone2 from "../../../public/static/OurMission2.png";
 
 const ProductPage = () => {
   const {
