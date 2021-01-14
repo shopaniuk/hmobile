@@ -57,24 +57,50 @@ div.colorContainer button{
     width: 50px;
     border-color: white;
     margin-bottom: 20px;
+    border-width: 3px;
+    transition: border 0.1s;
 }
 button.red {
+    background-color: red;
+}
+button.red:hover {
+    border-color: red;    
     background-color: red;
 }
 button.black {
     background-color: black;
 }
+button.black:hover {
+    border-color: black;    
+    background-color: black;   
+}
 button.blue {
     background-color: blue;
+}
+button.blue:hover {
+    border-color: blue;    
+    background-color: blue;   
 }
 button.turquoise {
     background-color: aqua;
 }
+button.turquoise:hover {
+    border-color: aqua;    
+    background-color: aqua;   
+}
 button.green {
     background-color: green;
 }
+button.green:hover {
+    border-color: green;    
+    background-color: green;   
+}
 button.gray {
     background-color: lightgray;
+}
+button.gray:hover {
+    border-color: lightgray;    
+    background-color: lightgray;   
 }
 
 div.rightContainer {
