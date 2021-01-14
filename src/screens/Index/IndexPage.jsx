@@ -4,6 +4,7 @@ import HomeCarousel from "../../components/HomeCarousel";
 import { ChevronLeft, ChevronRight, KeyboardArrowDown, Star, StarOutline, ShoppingCartOutlined } from "@material-ui/icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button, Image } from "react-bootstrap";
+import Link from "next/link";
 import AirPods from "../../../public/static/airPods.png";
 import Runner from "../../../public/static/runner.png";
 
@@ -20,7 +21,7 @@ const IndexPage = () => {
             <p>
             To offer you new ways to access your device that are comfortable, secure, and tailored to fit your lifestyle. Life can be complex, HuggyGear helps you simplify. Have it your way – anywhere, anytime. Be Ready for Anything!
           </p>
-            <Button className={classes.buyButton}>BUY PRODUCT</Button>
+            <Link href="/infinity"><Button className={classes.buyButton}>BUY PRODUCT</Button></Link>
           </div>
         </div>
 
@@ -53,7 +54,7 @@ const IndexPage = () => {
             <span className={classes.features}>FEATURES - </span>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit
           </p>
-          <Button className={classes.buyButton}>BUY PRODUCT</Button>
+          <Link href="/infinity"><Button className={classes.buyButton}>BUY PRODUCT</Button></Link>
         </div>
       </div>
       <div className={classes.viewAll}>

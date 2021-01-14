@@ -1,11 +1,7 @@
 import React from "react";
 import classes from "./ProductPage.module.css";
-import HomeCarousel from "../../components/HomeCarousel";
 import { ChevronLeft, ChevronRight, KeyboardArrowDown, Star, StarOutline, ShoppingCartOutlined } from "@material-ui/icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button, Image } from "react-bootstrap";
-import AirPods from "../../../public/static/airPods.png";
-import Runner from "../../../public/static/runner.png";
 import Link from "next/link";
 import product from "../../../public/static/product.png";
 import phone2 from "../../../public/static/OurMission2.png";
@@ -30,7 +26,7 @@ const ProductPage = () => {
           <h4>ACCESSORIES AVAILABLE</h4>
           <h4>COLORS AVAILABLE</h4>
           <h4>CUSTOMIZATION AVAILABLE</h4>
-          <Link id="learnMore" href="/" ><Button className={learnMore}>MORE INFORMATION</Button></Link>
+          <Link id="learnMore" href="/infinity" ><Button className={learnMore}>MORE INFORMATION</Button></Link>
         </div>
       </div>
       <div className={tabletContainer}>

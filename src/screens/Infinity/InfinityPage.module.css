@@ -1,0 +1,130 @@
+.centerText {
+    text-align: center;
+}
+
+div.infinityContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+
+div.leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+}
+img.infinityImage {
+    max-width: 400px;
+    margin-bottom: 50px;
+}
+img.recommendedImage {
+    max-width: 20vw;
+}
+
+div.middleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25vw;
+}
+div.middleContainer h1 {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+}
+div.middleContainer h3 {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+div.middleContainer p {
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+}
+div.colorContainer {
+    display: flex;
+    flex-direction: row;
+
+}
+div.colorContainer button{
+    border-radius: 50%;
+    margin-left: 15px;
+    height: 50px;
+    width: 50px;
+    border-color: white;
+    margin-bottom: 20px;
+}
+button.red {
+    background-color: red;
+}
+button.black {
+    background-color: black;
+}
+button.blue {
+    background-color: blue;
+}
+button.turquoise {
+    background-color: aqua;
+}
+button.green {
+    background-color: green;
+}
+button.gray {
+    background-color: lightgray;
+}
+
+div.rightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25vw;
+}
+div.rightContainer h1 {
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+div.rightContainer h3 {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+img.activitiesImage {
+    max-width: 20vw;
+    margin-bottom: 50px;
+}
+
+ul.locations {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+ul.locations li {
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+button.buyButton {
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: sans-serif;
+    margin-right: 50px;
+    border-color: black;
+    border-width: 5px;
+}
+button.buyButton:hover {
+    color:black;
+    background-color: white;
+    border-color: black;
+}
