@@ -16,8 +16,8 @@ const AboutPage = () => {
       <h1 className={title}>ABOUT</h1>
       <div className={ourMissionContainer}>
         <div className={ourMissionLeft}>
-          <Image className={ourMissionImage} src={OurMission1}></Image>
-          <Image className={ourMissionImage} src={OurMission2}></Image>
+          <Image className={ourMissionImage} src={ourMission1}></Image>
+          <Image className={ourMissionImage} src={ourMission2}></Image>
         </div>
         <div className={ourMissionRight}>
           <h2 className={ourMissionTitle}>OUR MISSION</h2>
