@@ -3,8 +3,8 @@ import classes from "./AboutPage.module.css";
 import { ChevronLeft, ChevronRight, KeyboardArrowDown, Star, StarOutline, ShoppingCartOutlined } from "@material-ui/icons";
 import { Button, Image } from "react-bootstrap";
 import Link from "next/link";
-import OurMission1 from "../../../public/static/OurMission1.png";
-import OurMission2 from "../../../public/static/OurMission2.png";
+import ourMission1 from "../../../public/static/ourMission1.png";
+import ourMission2 from "../../../public/static/ourMission2.png";
 import theProduct from "../../../public/static/theProduct.png";
 
 const AboutPage = () => {
