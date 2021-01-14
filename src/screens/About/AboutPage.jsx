@@ -6,7 +6,7 @@ import { Button, Image } from "react-bootstrap";
 import AirPods from "../../../public/static/airPods.png";
 import Runner from "../../../public/static/runner.png";
 import Link from "next/link";
-import ourMission1 from "../../../public/static/OurMission1.png";
+// import ourMission1 from "../../../public/static/OurMission1.png";
 import ourMission2 from "../../../public/static/OurMission2.png";
 import theProduct from "../../../public/static/theProduct.png";
 
