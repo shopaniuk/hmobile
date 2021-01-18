@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./IndexPage.module.css";
 import HomeCarousel from "../../components/HomeCarousel";
 import { ChevronLeft, ChevronRight, KeyboardArrowDown, Star, StarOutline, ShoppingCartOutlined } from "@material-ui/icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button, Image } from "react-bootstrap";
 import Link from "next/link";
 import AirPods from "../../../public/static/airPods.png";

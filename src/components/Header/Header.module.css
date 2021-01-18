@@ -24,3 +24,75 @@
 .endRoute {
     margin-left: auto;
 }
+.cartIcon {
+    color: black;
+    font-weight: 300;
+}
+div.title {
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 550;
+    margin: 30px 10px;
+}
+div.body {
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 300; 
+    margin: 30px 10px; 
+}
+button.cartButton {
+    color: black;
+    background-color: white;
+    border-color: white;
+    font-size: 24px;
+}
+button.cartButton:hover {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+button.cartButton:active {
+    color: white !important;
+    background-color: black !important;
+    border-color: white !important;
+}
+button.cartButton:focus {
+    color: white !important;
+    background-color: black !important;
+    border-color: white !important;
+}
+div.footerContainer {
+    margin: 30px 10px 100px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.finalPrice {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button.nextButton {
+    width: 70%;
+    height: 60px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: black;
+    background-color: white;
+    border-color: black;
+    margin-top: 20px;
+}
+
+button.nextButton:hover {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+button.nextButton:active {
+    color: white;
+    background-color: black;
+    border-color: white;
+}

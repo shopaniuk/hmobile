@@ -19,12 +19,6 @@ const routes = [
     auth: false,
     atEnd: false,
   },
-  {
-    name: "CART",
-    link: urls.pages.about,
-    auth: false,
-    atEnd: false,
-  },
 ];
 
 export default routes;
