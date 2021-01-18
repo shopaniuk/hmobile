@@ -34,15 +34,15 @@ const Header = ({ loggedIn, currentRoute }) => {
       </Button>
 
       <Modal size="lg" show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+        <Modal.Header className={styles.headerContainer} closeButton>
           <Modal.Title className={styles.title}>
             <ShoppingCartOutlined style={{ fontSize: 40, fontWeight: 400, marginRight: "20px" }} className={styles.cartIcon} />
             SHOPPING CART
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body className={styles.body}>The dynamic version of this coming soon</Modal.Body>
-        <Modal.Footer>
-          <div className={styles.footerContainer}>
+        <Modal.Body className={styles.bodyContainer}>The dynamic version of this coming soon</Modal.Body>
+        <Modal.Footer className={styles.footerContainer}>
+          <div className={styles.footerContent}>
             <div className={styles.finalPrice}>
               <h4>TOTAL</h4>
               <h4>$6.99</h4>
