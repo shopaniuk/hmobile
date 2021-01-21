@@ -28,3 +28,10 @@ html, body, #__next {
 *:focus:not(.focus-visible) {
     outline: none;
 }
+
+  .Toastify__toast--success {
+    background: black;
+    font-size: 28px;
+    font-family: sans-serif;
+    padding-left: 10px;
+  }

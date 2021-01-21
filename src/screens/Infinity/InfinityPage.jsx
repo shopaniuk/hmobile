@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./InfinityPage.module.css";
 import { ChevronLeft, ChevronRight, KeyboardArrowDown, Star, StarOutline, ShoppingCartOutlined } from "@material-ui/icons";
 import { Button, Image } from "react-bootstrap";
@@ -7,11 +7,13 @@ import infinity from "../../../public/static/infinity.png";
 import recommended from "../../../public/static/recommended.png";
 import activities from "../../../public/static/activities.png";
 
-const InfinityPage = () => {
+function InfinityPage(props) {
   const {
     infinityContainer, leftContainer, infinityImage, recommendedImage, middleContainer, rightContainer, gallery, colorContainer, black, blue, red,
     turquoise, green, gray, activitiesImage, locations, buyButton
   } = classes;
+  const [currentItem, setCurrentItem] = useState({quantity: 1, color:"BLACK", product: "INFINITY", price: 6.99});
+
   return (
     <div className={infinityContainer}>
       <div className={leftContainer}>
@@ -58,7 +60,7 @@ const InfinityPage = () => {
           <li>used diam nonummy</li>
           <li>consectetuer</li>
         </ul>
-        <Button className={buyButton}>Buy Product</Button>
+        <Button onClick={() => props.addToCart(currentItem)} className={buyButton}>Buy Product</Button>
       </div>
     </div>
   );

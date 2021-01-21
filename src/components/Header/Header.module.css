@@ -59,6 +59,45 @@ div.bodyContainer {
     padding-left: 0px;
     padding-right: 0px;
 }
+button.removeItem {
+    margin-left: 90%;
+    background-color: white;
+    border-color: white;
+    color: gray;
+    font-size: 34px;
+    transition: color 0.1s;
+}
+button.removeItem:hover {
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+div.item {
+    width: 100%;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: space-between;
+}
+
+div.item div {
+    display: flex;
+    flex-direction: column;
+}
+div.item div h1 {
+    font-family: sans-serif;
+}
+div.item div h1.productName {
+    font-weight: 700;
+}
+div.item h1.price {
+    margin-top: auto;
+    margin-right: 10px;
+}
+img.infinityImage {
+    width: 200px;
+    margin-top: -50px;
+
+}
 button.cartButton {
     color: black;
     background-color: white;

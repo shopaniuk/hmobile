@@ -1,18 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import clsx from "clsx";
 import PropTypes from "prop-types";
 import NavLink from "../NavLink";
 import routes from "./routes";
 import styles from "./Header.module.css";
 import { ShoppingCartOutlined } from "@material-ui/icons";
-import { Button, Modal } from "react-bootstrap";
+import { Image, Button, Modal } from "react-bootstrap";
+import infinityItem from "../../../public/static/infinityItem.png";
 
-const Header = ({ loggedIn, currentRoute }) => {
+function Header(props) {
+  const {loggedIn, cart, currentRoute} = props;
+  const [items, setItems] = useState(cart);
+  useEffect(() => {
+    console.log("we're here")
+    setItems(cart);
+  }, [props.cart])
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  var total = 0; var item;
+  for (item of cart) {
+    total += item.price;
+  }
+  var isCartEmpty = true;
+  if (cart.length != 0) {
+    isCartEmpty = false;
+  }
 
+  const cartText = isCartEmpty ? "CART" : `CART (${cart.length})`;
   return (
     <div className={styles.root}>
       {routes
@@ -30,7 +45,7 @@ const Header = ({ loggedIn, currentRoute }) => {
           </NavLink>
         ))}
       <Button className={styles.cartButton} onClick={handleShow}>
-        CART
+        {cartText}
       </Button>
 
       <Modal size="lg" show={show} onHide={handleClose}>
@@ -40,12 +55,26 @@ const Header = ({ loggedIn, currentRoute }) => {
             SHOPPING CART
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body className={styles.bodyContainer}>The dynamic version of this coming soon</Modal.Body>
+        <Modal.Body className={styles.bodyContainer}>
+          {items.map((item, index) => (
+            <div key={index}>
+            <Button onClick={() => props.removeFromCart(index)} className={styles.removeItem}>X</Button>
+            <div className={styles.item}>
+              <Image className={styles.infinityImage} src={infinityItem} />
+              <div>
+                <h1 className={styles.productName}>{item.product}</h1>
+                <h1>{item.color}</h1>
+              </div>
+              <h1 className={styles.price}>{item.price}</h1>
+            </div>
+            </div>
+          ))}
+        </Modal.Body>
         <Modal.Footer className={styles.footerContainer}>
           <div className={styles.footerContent}>
             <div className={styles.finalPrice}>
               <h4>TOTAL</h4>
-              <h4>$6.99</h4>
+              <h4>${total}</h4>
             </div>
             <Button className={styles.nextButton} onClick={handleClose}>
               NEXT

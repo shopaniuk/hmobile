@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import App from "next/app";
 import Head from "next/head";
@@ -6,25 +6,48 @@ import Router from "next/router";
 import { getCurrentUser } from "../actions/User";
 import urls from "../../utils/urls";
 import Header from "../components/Header";
+import { ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "focus-visible/dist/focus-visible.min.js";
 import "normalize.css";
+import "react-toastify/dist/ReactToastify.css";
 import "../../public/static/styles/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const MyApp = ({ Component, pageProps, router, currentUser }) => (
-  <>
-    <Head>
-      <title>Huggy Mobile</title>
-    </Head>
-    <div className="App">
-      <Header loggedIn={currentUser != null} currentRoute={router.asPath} />
-      <div className="Content">
-        <Component {...pageProps} currentUser={currentUser} />
+const MyApp = ({ Component, pageProps, router, currentUser }) => {
+  const [cart, setCart] = useState([]);
+  const addItemWrapper = (item) => {
+    console.log("ta da")
+    setCart([...cart, item]);
+    toast.success("Added to Cart!", {
+      position: "bottom-right",
+      autoClose: 2000,
+      closeOnClick: true,
+      draggable: true,
+    })
+  };
+  const deleteItemWrapper = (index) => {
+    var newCart = cart;
+    console.log("we made it")
+    newCart.splice(index, 1);
+    setCart(newCart);
+  }
+  return (
+    <>
+      <Head>
+        <title>Huggy Mobile</title>
+      </Head>
+      <div className="App">
+        <Header loggedIn={currentUser != null} cart={cart} currentRoute={router.asPath} removeFromCart={deleteItemWrapper} />
+        <div className="Content">
+          <Component {...pageProps} cart={cart}  addToCart={addItemWrapper} currentUser={currentUser} />
+        </div>
+        <ToastContainer />
       </div>
-    </div>
-  </>
-);
+    </>
+  );
+}
 
 MyApp.getInitialProps = async (appContext) => {
   const { res } = appContext.ctx;
