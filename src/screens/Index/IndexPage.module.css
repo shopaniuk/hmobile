@@ -5,33 +5,6 @@
     margin-top: 50px;
 }
 
-.carouselContainer {
-    margin-top: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.carouselImage {
-    height: 600px;
-    margin-right: 30px;
-}
-.carouselText {
-    width: 400px;
-}
-.carouselText h1 {
-    font-size: 60px;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-.carouselText p {
-    font-size: 25px;
-    font-family: sans-serif;
-}
-.carouselItem {
-    display: flex;
-    align-items: center;
-}
 button.buyButton {
     background-color: white;
     color: black;

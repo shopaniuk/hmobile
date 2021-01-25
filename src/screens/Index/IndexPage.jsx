@@ -10,22 +10,7 @@ import Runner from "../../../public/static/runner.png";
 const IndexPage = () => {
   return (
     <div className={classes.indexContainer}>
-      {/* <HomeCarousel /> */}
-      <div className={classes.carouselContainer}>
-        <ChevronLeft style={{ fontSize: 60 }} className={classes.chevron} />
-        <div className={classes.carouselItem}>
-          <Image className={classes.carouselImage} src={AirPods} />
-          <div className={classes.carouselText}>
-            <h1>Be Ready for Anything!</h1>
-            <p>
-            To offer you new ways to access your device that are comfortable, secure, and tailored to fit your lifestyle. Life can be complex, HuggyGear helps you simplify. Have it your way – anywhere, anytime. Be Ready for Anything!
-          </p>
-            <Link href="/infinity"><Button className={classes.buyButton}>BUY PRODUCT</Button></Link>
-          </div>
-        </div>
-
-        <ChevronRight style={{ fontSize: 60 }} className={classes.chevron} />
-      </div>
+      <HomeCarousel />
       <div className={classes.learnMore}>
         <h1>SCROLL TO LEARN MORE</h1>
         <KeyboardArrowDown style={{ fontSize: 60 }} className={classes.chevron} />

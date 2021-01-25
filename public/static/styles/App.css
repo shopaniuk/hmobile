@@ -35,3 +35,37 @@ html, body, #__next {
     font-family: sans-serif;
     padding-left: 10px;
   }
+
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+span.carousel-control-next-icon:after
+{
+  content: '>';
+  font-family: sans-serif;
+  font-size: 55px;
+  color: black;
+  font-weight: 600;
+}
+
+span.carousel-control-prev-icon:after {
+  content: '<';
+  font-family: sans-serif;
+  font-size: 55px;
+  color:  black;
+  font-weight: 600;
+}
+
+ol.carousel-indicators li {
+    opacity: 0;
+}
+ol.carousel-indicators .active{
+    opacity: 0;
+}

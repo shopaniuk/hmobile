@@ -13,7 +13,6 @@ import "normalize.css";
 import "react-toastify/dist/ReactToastify.css";
 import "../../public/static/styles/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const MyApp = ({ Component, pageProps, router, currentUser }) => {
   const [cart, setCart] = useState([]);

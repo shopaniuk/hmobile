@@ -24,3 +24,50 @@
 .endRoute {
     margin-left: auto;
 }
+
+img.carouselImage {
+    height: 600px;
+    width: 400px;
+    margin-right: 30px;
+}
+div.carouselText {
+    width: 600px;
+    margin-left: 50px;
+}
+div.carouselText h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+div.carouselText h3 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 20px 0px;
+}
+div.carouselText p {
+    font-size: 22px;
+    font-family: sans-serif;
+}
+div.carouselItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button.buyButton {
+    background-color: white;
+    color: black;
+    width: 200px;
+    border-color: black;
+    height: 50px;
+    font-size: 22px;
+    margin-top: 20px;
+}
+button.buyButton:hover {
+    color:white;
+    background-color:black;
+    border-color: white;
+}
+.carouselContainer {
+    margin-top: 100px;
+}
